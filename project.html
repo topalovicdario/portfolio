@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Portfolio</title>
+    <link rel="stylesheet" href="css/projectStyle.css" />
+  </head>
+  <body>
+
+    <nav>
+      <div class="menu-btn">
+        <button class="btn" id="menuBtn">
+          <svg width="16" height="16">
+            <rect width="16" height="3.2" />
+            <rect y="6.4" width="16" height="3.2" />
+            <rect y="12.8" width="16" height="3.2" />
+          </svg>
+        </button>
+        <div style="display: flex">
+          <a class="btn" href="https://www.linkedin.com/in/dariotopalovic/" target="_blank">
+            <svg width="16" height="16">
+              <path
+                d="M0.1,2c0-1,0.8-1.8,1.9-1.8c1,0,1.8,0.9,1.8,1.8c0,1-0.8,1.9-1.8,1.9C0.9,3.9,0.1,3.1,0.1,2z M0.1,5h3.7v9.8H0.1V5z"
+              />
+              <path
+                d="M15.9,8.5v6.2h-3.5V9.4c0-0.9-0.6-1.6-1.5-1.6c-0.8,0-1.4,0.6-1.4,1.5v5.5H5.8V5h3.7v1c0.6-0.7,1.6-1.2,2.8-1.2C14.4,4.7,15.9,6.3,15.9,8.5z"
+              />
+            </svg>
+          </a>
+          <a class="btn" href="https://github.com/topalovicdario" target="_blank">
+            <svg width="16" height="16">
+              <path
+                d="M10.6,12.9c0-1-0.3-1.6-0.7-2c2.4-0.3,4.9-1.1,4.9-5.2c0-1.1-0.4-2.1-1.1-2.9c0.1-0.3,0.5-1.3-0.1-2.8c0,0-0.9-0.3-3,1.1c-1.7-0.5-3.6-0.5-5.4,0c-2-1.4-3-1.1-3-1.1C1.6,1.4,2,2.5,2.1,2.8C1.4,3.5,1,4.6,1,5.6c0,4.1,2.5,5,4.9,5.3c-0.4,0.4-0.6,0.9-0.7,1.4c-0.6,0.3-2.2,0.7-3.1-0.9c0,0-0.6-1-1.6-1.1c0,0-1.1,0-0.1,0.7c0,0,0.7,0.3,1.1,1.6c0,0,0.6,2.1,3.6,1.5c0,0.9,0,1.8,0,1.8h5.3C10.6,15.9,10.6,14.4,10.6,12.9z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-body">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html" class="nav-active">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+    <div class="projects-container">
+      <article class="projects-content">
+        <h1 class="page-title">MY PROJECTS</h1>
+
+
+        <section class="project-item left" data-project="1">
+          <div class="project-image-wrapper" data-gallery-id="1">
+            <img
+              src="data/images/p1m.png"
+              alt="KVIZAPP multiplayer quiz game interface"
+              class="project-image"
+            />
+          </div>
+          <div class="project-info">
+            <div class="project-number">PROJECT 01</div>
+            <h2 class="project-title">KVIZAPP - Multiplayer Quiz Game</h2>
+            <p class="project-description">
+              <span class="description-preview">
+                This full-stack multiplayer quiz application was designed to test my ability to build a complete,
+                production-ready system. The primary focus was on backend architecture,
+                implementing robust server infrastructure that handles multiple concurrent players seamlessly.
+              </span>
+              <span class="description-full">
+                I developed comprehensive async operations for real-time gameplay,
+                implemented periodic data persistence from working memory to MySQL database,
+                and optimized connection handling for improved performance. Security was paramount,
+                with secure authentication protocols integrated throughout. The server utilizes both
+                REST API and SignalR protocols for efficient client-server communication.
+                I applied SOLID principles extensively and implemented various design patterns including Factory,
+                Decorator, and Singleton patterns to ensure maintainable, scalable code. The .NET MAUI client serves
+                as a functional test version, while the .NET backend represents the project's core achievement -
+                demonstrating my capability to architect and implement enterprise-level server solutions.
+              </span>
+            </p>
+            <button class="read-more-btn">Read More</button>
+            <ul class="project-tech">
+              <li class="tech-tag">.NET</li>
+              <li class="tech-tag">.NET MAUI</li>
+              <li class="tech-tag">MySQL</li>
+              <li class="tech-tag">SignalR</li>
+              <li class="tech-tag">REST API</li>
+              <li class="tech-tag">Async/Await</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section class="project-item right" data-project="2">
+          <div class="project-image-wrapper" data-gallery-id="2">
+            <img
+              src="data/images/p2m.png"
+              alt="Spendly personal finance Android app interface"
+              class="project-image"
+            />
+          </div>
+          <div class="project-info">
+            <div class="project-number">PROJECT 02</div>
+            <h2 class="project-title">Spendly - Personal Finance Manager</h2>
+            <p class="project-description">
+              <span class="description-preview">
+                Developed as a university project using Android Studio,
+                Spendly is a comprehensive personal finance management
+                application that helps users track their financial health.
+                The app features intuitive expense and income tracking, providing real-time insights into spending patterns.
+              </span>
+              <span class="description-full">
+                Users can analyze financial trends over time through interactive
+                charts and detailed reports, making informed decisions about their budget.
+                Built with Kotlin and integrated with Firebase for cloud-based data storage
+                and real-time synchronization, the app ensures users' financial data is secure
+                and accessible across devices. The application demonstrates proficiency
+                in mobile development, database management, and creating user-centric financial tools that
+                solve real-world problems. This project showcases my ability to design and implement feature-rich
+                Android applications with modern architecture patterns.
+              </span>
+            </p>
+            <button class="read-more-btn">Read More</button>
+            <ul class="project-tech">
+              <li class="tech-tag">Android Studio</li>
+              <li class="tech-tag">Kotlin</li>
+              <li class="tech-tag">Firebase</li>
+              <li class="tech-tag">Material Design</li>
+              <li class="tech-tag">Charts/Analytics</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section class="project-item left" data-project="3">
+          <div class="project-image-wrapper" data-gallery-id="3">
+            <img
+              src="data/images/p3m.png"
+              alt="Collection of Java mini projects"
+              class="project-image"
+            />
+          </div>
+          <div class="project-info">
+            <div class="project-number">PROJECT 03</div>
+            <h2 class="project-title">Java Mini Projects Collection</h2>
+            <p class="project-description">
+              <span class="description-preview">
+                This collection represents my journey into software development through various hands-on Java projects.
+                Starting with Snake, my first game built with Java 2D graphics, I learned fundamental game mechanics and rendering.
+              </span>
+              <span class="description-full">
+                The BlackJack game further enhanced my understanding of object-oriented programming and game logic.
+                I created a fully functional ATM application with database integration, implementing secure transaction
+                handling and user authentication. The most significant project was a custom-built transportation management
+                system for my father's trucking business, featuring a complete backend server, comprehensive database design,
+                and business logic for managing logistics operations. These projects collectively demonstrate my growth as a developer,
+                showcasing skills in database design, client-server architecture, and building practical solutions for real-world business needs using Java.
+              </span>
+            </p>
+            <button class="read-more-btn">Read More</button>
+            <ul class="project-tech">
+              <li class="tech-tag">Java</li>
+              <li class="tech-tag">Java 2D Graphics</li>
+              <li class="tech-tag">MySQL</li>
+              <li class="tech-tag">JDBC</li>
+              <li class="tech-tag">Swing/JavaFX</li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <div class="gallery-modal" id="galleryModal">
+      <div class="gallery-content">
+        <button class="gallery-close">×</button>
+        <h2 class="gallery-title" id="galleryTitle">PROJECT GALLERY</h2>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span class="year">2026</span> Dario Topalovic | <a href="mailto:dtopalovic.02@gmail.com">dtopalovic.02@gmail.com</a></p>
+    </footer>
+
+    <script type="module" src="js/projectStyle.js"></script>
+  </body>
+</html>

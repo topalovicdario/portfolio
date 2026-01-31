@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Portfolio</title>
+    <link rel="stylesheet" href="css/contactStyle.css" />
+  </head>
+  <body>
+
+    <nav>
+      <div class="menu-btn">
+        <button class="btn" id="menuBtn">
+          <svg width="16" height="16">
+            <rect width="16" height="3.2" />
+            <rect y="6.4" width="16" height="3.2" />
+            <rect y="12.8" width="16" height="3.2" />
+          </svg>
+        </button>
+        <div style="display: flex">
+          <a class="btn" href="https://www.linkedin.com/in/dariotopalovic/" target="_blank">
+            <svg width="16" height="16">
+              <path
+                d="M0.1,2c0-1,0.8-1.8,1.9-1.8c1,0,1.8,0.9,1.8,1.8c0,1-0.8,1.9-1.8,1.9C0.9,3.9,0.1,3.1,0.1,2z M0.1,5h3.7v9.8H0.1V5z"
+              />
+              <path
+                d="M15.9,8.5v6.2h-3.5V9.4c0-0.9-0.6-1.6-1.5-1.6c-0.8,0-1.4,0.6-1.4,1.5v5.5H5.8V5h3.7v1c0.6-0.7,1.6-1.2,2.8-1.2C14.4,4.7,15.9,6.3,15.9,8.5z"
+              />
+            </svg>
+          </a>
+          <a class="btn" href="https://github.com/topalovicdario" target="_blank">
+            <svg width="16" height="16">
+              <path
+                d="M10.6,12.9c0-1-0.3-1.6-0.7-2c2.4-0.3,4.9-1.1,4.9-5.2c0-1.1-0.4-2.1-1.1-2.9c0.1-0.3,0.5-1.3-0.1-2.8c0,0-0.9-0.3-3,1.1c-1.7-0.5-3.6-0.5-5.4,0c-2-1.4-3-1.1-3-1.1C1.6,1.4,2,2.5,2.1,2.8C1.4,3.5,1,4.6,1,5.6c0,4.1,2.5,5,4.9,5.3c-0.4,0.4-0.6,0.9-0.7,1.4c-0.6,0.3-2.2,0.7-3.1-0.9c0,0-0.6-1-1.6-1.1c0,0-1.1,0-0.1,0.7c0,0,0.7,0.3,1.1,1.6c0,0,0.6,2.1,3.6,1.5c0,0.9,0,1.8,0,1.8h5.3C10.6,15.9,10.6,14.4,10.6,12.9z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-body">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html" class="nav-active">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+    <div class="contact-container">
+      <div class="contact-content">
+        <div class="intro-message" id="introMessage">
+        <h1 class="page-title">LET'S TALK</h1>
+        <p class="page-subtitle">
+         Do you have a project in mind?
+         <br />
+         Want to collaborate?
+         <br />Or just talk about code?
+         <br />
+        Fill out the form below and I'll get back to you as soon as possible!
+        </p>
+
+
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+   </div>
+        <div class="form-wrapper">
+
+          <div class="form-step active" data-step="1">
+            <div class="step-label">STEP 01 / 04</div>
+            <h2 class="step-question">What's your name?</h2>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-input"
+                id="firstName"
+                placeholder="Your first name..."
+                maxlength="50"
+              />
+              <div class="char-count">
+                <span id="firstNameCount">0</span>/50
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-step" data-step="2">
+            <div class="step-label">STEP 02 / 04</div>
+            <h2 class="step-question">and last name?</h2>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-input"
+                id="lastName"
+                placeholder="Your last name..."
+                maxlength="50"
+              />
+              <div class="char-count"><span id="lastNameCount">0</span>/50</div>
+            </div>
+          </div>
+
+
+          <div class="form-step" data-step="3">
+            <div class="step-label">STEP 03 / 04</div>
+            <h2 class="step-question">Why do you want to contact me?</h2>
+            <div class="reason-cards">
+              <div class="reason-card" data-reason="job">
+
+                <div class="reason-title">JOB OFFER</div>
+                <div class="reason-desc">You have a job or project for me</div>
+              </div>
+              <div class="reason-card" data-reason="collaboration">
+
+                <div class="reason-title">COLLABORATION</div>
+                <div class="reason-desc">Want to collaborate on a project</div>
+              </div>
+              <div class="reason-card" data-reason="question">
+
+                <div class="reason-title">QUESTION</div>
+                <div class="reason-desc">Have a question or need advice</div>
+              </div>
+              <div class="reason-card" data-reason="other">
+
+                <div class="reason-title">OTHER</div>
+                <div class="reason-desc">Something else cool</div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-step" data-step="4">
+            <div class="step-label">STEP 04 / 04</div>
+            <h2 class="step-question">Tell me more!</h2>
+            <div class="input-group">
+              <textarea
+                class="form-input"
+                id="message"
+                placeholder="Your message..."
+                maxlength="500"
+              ></textarea>
+              <div class="char-count"><span id="messageCount">0</span>/500</div>
+            </div>
+          </div>
+
+
+          <div class="form-navigation" id="formNav">
+            <button class="form-btn" id="prevBtn" disabled>← BACK</button>
+            <button class="form-btn" id="nextBtn">NEXT →</button>
+            <button
+              class="form-btn submit-btn"
+              id="submitBtn"
+              style="display: none"
+            >
+              SEND
+            </button>
+          </div>
+
+          <div class="success-message" id="successMessage">
+            <div class="success-icon">🚀</div>
+            <h2 class="success-title">MESSAGE SENT!</h2>
+            <p class="success-text">
+              Thank you for reaching out! I'll read your message and get back to
+              you soon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; <span class="year">2026</span> Dario Topalovic | <a href="mailto:dtopalovic.02@gmail.com">dtopalovic.02@gmail.com</a></p>
+    </footer>
+    </main>
+
+    <script type="module" src="js/contactScript.js"></script>
+  </body>
+</html>
