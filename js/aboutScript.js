@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   btn.addEventListener("click", toggleMenu);
 
-  // Dynamic year in footer
+
   const yearElement = document.querySelector(".year");
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();

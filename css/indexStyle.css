@@ -256,13 +256,12 @@ body {
   box-shadow: rgba(255, 255, 255, 0.811) 6px 6px;
 }
 
-/* ======== Active Navigation Link ======== */
 .menu-body a.nav-active {
   border-bottom: 6px solid var(--color-light);
   color: var(--color-light);
 }
 
-/* ======== Footer Styles ======== */
+
 footer {
   width: 100%;
   background: #1a1a1a;
@@ -286,7 +285,7 @@ footer a:hover {
   color: #ffffff;
 }
 
-/* ======== Mobile Responsive Styles (iPhone 16 Pro and similar devices) ======== */
+
 @media (max-width: 768px) {
   .menu-btn {
     padding: 20px;

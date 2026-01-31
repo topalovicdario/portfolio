@@ -64,7 +64,7 @@ videoTexture.repeat.set(-1, 1);
 videoTexture.rotation = Math.PI / 2;
 
 const loader = new GLTFLoader();
-loader.load("https://github.com/topalovicdario/portfolio/releases/download/v1.0/pc5.glb", (gltf) => {
+loader.load("data/models/pc5.glb", (gltf) => {
   const model = gltf.scene;
   model.scale.set(1, 1, 1);
 
