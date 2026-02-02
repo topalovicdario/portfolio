@@ -38,7 +38,7 @@ let isArticleFullyOpen = false;
 let videoplay = false;
 let scrollProgress = 0;
 let targetScrollProgress = 0;
-let SCROLL_SPEED = 0.0008;
+let scroll_speed = 0.0008;
 const modelCenterOffset = new THREE.Vector3();
 
 const startPos = { x: 0, y: 2, z: 16 };
@@ -208,7 +208,7 @@ window.addEventListener(
     if (state.isEntering) return;
 
     if (targetScrollProgress >= 0.6 && !a) {
-      SCROLL_SPEED = 0.004;
+      scroll_speed = 0.004;
       state.portalIsReady = true;
 
       a = true;
@@ -222,10 +222,10 @@ window.addEventListener(
 
       a = false;
       console.log(a);
-      SCROLL_SPEED = 0.0008;
+      scroll_speed = 0.0008;
     }
 
-    targetScrollProgress -= event.deltaY * SCROLL_SPEED;
+    targetScrollProgress -= event.deltaY * scroll_speed;
     targetScrollProgress = Math.max(Math.min(1, targetScrollProgress));
 
     console.log("skrol progres:", targetScrollProgress.toFixed(2));
